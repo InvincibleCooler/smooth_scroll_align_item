@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="400dp"
+    android:background="#212121"
+    app:cardBackgroundColor="#212121"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="0dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#f0f"
+        android:textSize="30dp"
+        tools:text="타이틀" />
+</androidx.cardview.widget.CardView>
