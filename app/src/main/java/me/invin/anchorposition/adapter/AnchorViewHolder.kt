@@ -73,11 +73,11 @@ open class AnchorViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
                 private fun getVisibleWidthPercentage(view: View): Double {
                     val itemRect = Rect()
-                    val isParentViewEmpty = view.getLocalVisibleRect(itemRect)
+                    val localVisibleRect = view.getLocalVisibleRect(itemRect)
                     val visibleWidth = itemRect.width().toDouble()
                     val width = view.measuredWidth
                     val visibleWidthPercentage = visibleWidth / width
-                    return if (isParentViewEmpty) {
+                    return if (localVisibleRect) {
                         visibleWidthPercentage
                     } else {
                         0.0
